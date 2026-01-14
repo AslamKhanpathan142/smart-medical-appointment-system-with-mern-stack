@@ -162,14 +162,14 @@ JWT_SECRET=your_jwt_secret
 ## ▶️ 11. How to Run Locally
 ### Backend(Server)
 ```bash
-cd Backend
+cd Server
 npm install
 npm start
 ```
 
 ### Frontend(Client)
 ```bash
-cd Frontend
+cd Client
 npm install
 npm run dev
 ```
