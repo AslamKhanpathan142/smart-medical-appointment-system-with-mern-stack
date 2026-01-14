@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./Dashboard.module.css";
+import styles from "./DashBoard.module.css";
 import ModernChart from "./ModernChart";
 
 const Dashboard = ({ showAllAppointmentData, countPatient, doctors }) => {
