@@ -1,0 +1,278 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+  border-radius: 50%;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 auto 15px;
+}
+
+.title {
+  color: #1a365d;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  color: #2a4365;
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.header p {
+  color: #718096;
+  font-size: 15px;
+}
+
+.roleSelector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.roleButton {
+  padding: 10px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 30px;
+  background: white;
+  color: #4a5568;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.roleButton:hover {
+  border-color: #3182ce;
+  color: #3182ce;
+}
+
+.roleButton.active {
+  background-color: #3182ce;
+  color: white;
+  border-color: #3182ce;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loginError {
+  background-color: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 8px;
+  padding: 12px 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #e53e3e;
+  font-size: 14px;
+}
+
+.loginError span {
+  background-color: #e53e3e;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a4365;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+.errorInput {
+  border-color: #e53e3e;
+}
+
+.errorInput:focus {
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.2);
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.rememberForgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4a5568;
+  cursor: pointer;
+}
+
+.forgotPassword {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.loginButton {
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+}
+
+.loginButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(49, 130, 206, 0.4);
+}
+
+.registerLink {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #4a5568;
+  padding-top: 20px;
+  border-top: 1px solid #edf2f7;
+}
+
+.registerLink a {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}
+
+.footerNote {
+  text-align: center;
+  margin-top: 30px;
+  color: #718096;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.links a {
+  color: #4a5568;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 30px 20px;
+  }
+  
+  .roleSelector {
+    flex-direction: column;
+  }
+  
+  .rememberForgot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .forgotPassword {
+    align-self: flex-end;
+  }
+  
+  .links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

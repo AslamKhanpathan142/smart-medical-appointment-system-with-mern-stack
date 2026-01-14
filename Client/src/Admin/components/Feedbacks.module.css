@@ -1,0 +1,120 @@
+.container {
+  padding: 2rem;
+  background: #f9f9fb;
+  margin-top: 70px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.noFeedback {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 2fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+ 
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subject {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.rating {
+  display: flex;
+  gap: 2px;
+}
+
+.message {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  padding-top: 0.6rem;
+}
+
+.name {
+  font-weight: 500;
+  color: #333;
+}
+
+.email {
+  font-style: italic;
+  color: #0077cc;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 0px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.showBtn {
+  background: #4caf50;
+  color: white;
+}
+
+.showBtn:hover {
+  background: #43a047;
+}
+
+.hideBtn {
+  background: #f44336;
+  color: white;
+}
+
+.hideBtn:hover {
+  background: #e53935;
+}

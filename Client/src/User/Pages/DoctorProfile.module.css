@@ -1,0 +1,367 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3748;
+}
+
+.header {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profileHeader {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a0c8f8 0%, #7ab3f0 100%);
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.imagePlace {
+  width: 180px;
+  height: 180px;
+  border: 4px solid #0c131b;
+  border-radius: 50%;
+  
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.profileInfo h1 {
+  font-size: 2.5rem;
+  color: #1a365d;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.specialization, .rating, .experience, .location {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.icon {
+  color: #3182ce;
+  font-size: 1.2rem;
+}
+
+.bookButton {
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+}
+
+.bookButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(49, 130, 206, 0.4);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2.5rem;
+}
+
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  color: #1a365d;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #ebf8ff;
+  font-weight: 600;
+}
+
+.list {
+  padding-left: 1.5rem;
+}
+
+.listItem {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.listItem::marker {
+  color: #3182ce;
+}
+.availabilityContainer {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.availabilityCard {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.dateHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  color: #2a4365;
+}
+
+.timeSlots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.timeSlot {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 30px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.timeSlot:hover {
+  border-color: #90cdf4;
+  background: #f7fafc;
+}
+
+.timeSlot.selected {
+  background: #3182ce;
+  color: white;
+  border-color: #3182ce;
+}
+
+.timeSlot.selected .icon {
+  color: white;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.bookingModal {
+  background: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bookingModal h2 {
+  color: #1a365d;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.bookingInfo {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.bookingInfo p {
+  margin: 0.5rem 0;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2a4365;
+}
+
+.formGroup textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.cancelButton, .confirmButton {
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancelButton {
+  background: transparent;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.cancelButton:hover {
+  background: #f7fafc;
+}
+
+.confirmButton {
+  background: #3182ce;
+  color: white;
+  border: none;
+}
+
+.confirmButton:hover {
+  background: #2b6cb0;
+}
+
+.confirmButton:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.successIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #38a169;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.successMessage h2 {
+  color: #38a169;
+  margin-bottom: 1rem;
+}
+
+.bookingDetails {
+  background: #f0fff4;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  text-align: left;
+  border: 1px solid #c6f6d5;
+}
+
+.bookingDetails p {
+  margin: 0.7rem 0;
+}
+
+.closeButton {
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background: #2b6cb0;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  
+  .profileHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem;
+  }
+  
+  .bookingModal {
+    padding: 1.5rem;
+  }
+  
+  .timeSlots {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+  }
+  
+  .cancelButton, .confirmButton {
+    width: 100%;
+    text-align: center;
+  }
+}

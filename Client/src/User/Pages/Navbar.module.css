@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.infoIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ebf8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
+  color: #3182ce;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a4365;
+  white-space: nowrap;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+.active {
+  color: #3182ce;
+}
+
+.navLink:hover {
+  color: #3182ce;
+}
+
+.scheduleButton {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.scheduleButton:hover {
+  background-color: #2b6cb0;
+}
+
+@media (max-width: 1024px) {
+  .navLinks {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  
+  .navLinks {
+    order: 3;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+}

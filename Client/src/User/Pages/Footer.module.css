@@ -1,0 +1,125 @@
+.footer {
+  background-color: #1a365d;
+  color: #e2e8f0;
+  padding: 3rem 2rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footerHeading {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3182ce;
+  font-weight: 600;
+}
+
+.footerText {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.8rem;
+}
+
+.footerLink {
+  color: #cbd5e0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+}
+
+.footerLink:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.contactInfo {
+  display: grid;
+  gap: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.contactIcon {
+  margin-top: 3px;
+  min-width: 20px;
+  color: #63b3ed;
+}
+
+.footerBottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.socialLink:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
