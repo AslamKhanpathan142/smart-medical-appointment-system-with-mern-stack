@@ -4,6 +4,7 @@ import { useOutletContext } from "react-router-dom";
 import { useEffect } from "react";
 import DoctorProfile from "/DoctorProfile1.webp";
 import { useNavigate } from "react-router-dom";
+import health1 from "/Health.avif";
 
 const FeaturedDoctors = () => {
   const { doctorCards, doctors } = useOutletContext();
@@ -70,7 +71,9 @@ const FeaturedDoctors = () => {
           </div>
 
           <div className={styles.imageContainer}>
-            <div className={styles.imagePlaceholder}></div>
+            <div className={styles.imagePlaceholder}>
+              <img src={health1} alt="" />
+            </div>
           </div>
         </div>
       </section>

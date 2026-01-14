@@ -5,6 +5,7 @@ import FeaturedDoctors from '../components/FeaturedDoctors';
 import HealthTips from '../components/HealthTips';
 import TestimonialsFAQ from '../components/TestimonialsFAQ.module';
 import { useNavigate } from "react-router-dom";
+import home1 from "/home.webp";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -35,7 +36,9 @@ const Home = () => {
       </div>
       
       <div className={styles.heroImage}>
-        <div className={styles.imagePlaceholder}></div>
+        <div className={styles.imagePlaceholder}>
+          <img src={home1} alt="" />
+        </div>
       </div>
     </section>
 
